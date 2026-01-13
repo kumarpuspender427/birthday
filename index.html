@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Sonam, Always 💗</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Dots -->
+    <nav class="nav-dots">
+        <div class="dot active" data-section="0"></div>
+        <div class="dot" data-section="1"></div>
+        <div class="dot" data-section="2"></div>
+        <div class="dot" data-section="3"></div>
+        <div class="dot" data-section="4"></div>
+        <div class="dot" data-section="5"></div>
+        <div class="dot" data-section="6"></div>
+        <div class="dot" data-section="7"></div>
+        <div class="dot" data-section="8"></div>
+        <div class="dot" data-section="9"></div>
+    </nav>
+
+    <!-- Section 1: Birthday Apologies Entry Page -->
+    <section id="section-0" class="section active birthday-apology-intro">
+        <div class="party-popper-container" id="partyPopper"></div>
+        <div class="stars"></div>
+        <div class="floating-particles"></div>
+        <div class="entry-content-wrapper">
+            <div class="entry-left">
+                <div class="photo-container fade-in-up">
+                    <div class="photo-frame">
+                        <img src="sonam-photo.jpeg" alt  ="Sonam" id="sonam-photo" class="sonam-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="photo-placeholder" style="display: none;">
+                            <div class="placeholder-icon">📷</div>
+                            <p class="placeholder-text">Add Sonam's Photo Here</p>
+                            <p class="placeholder-instruction">Replace "sonam-photo.jpg" with your image file</p>
+                        </div>
+                        <div class="photo-overlay">
+                            <div class="photo-hearts">💗</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="entry-right">
+                <div class="entry-content">
+                    <h1 class="fade-in-up interactive-title main-title">I'm Sorry, Sonam</h1>
+                    <h2 class="fade-in-up delay-1 subtitle">Happy Birthday, My Love 💗</h2>
+                    <p class="fade-in-up delay-2 intro-text">I missed the moment, but never the meaning</p>
+                    
+                    <div class="apology-summary fade-in-up delay-3">
+                        <div class="summary-card">
+                            <div class="summary-icon">😔</div>
+                            <p class="summary-text">I fell asleep when I should have been celebrating you, and I'm deeply sorry.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="birthday-highlight fade-in-up delay-4">
+                        <p class="highlight-text">Today is YOUR special day, Sonam</p>
+                        <p class="highlight-subtext">And I want to make it right</p>
+                    </div>
+                    
+                    <div class="interactive-elements fade-in-up delay-5">
+                        <div class="heart-collection">
+                            <span class="mini-heart interactive-heart-small" onclick="createHeartBurst(this)">💗</span>
+                            <span class="mini-heart interactive-heart-small" onclick="createHeartBurst(this)">💕</span>
+                            <span class="mini-heart interactive-heart-small" onclick="createHeartBurst(this)">💖</span>
+                            <span class="mini-heart interactive-heart-small" onclick="createHeartBurst(this)">💝</span>
+                        </div>
+                    </div>
+                    
+                    <div class="entry-details fade-in-up delay-6">
+                        <div class="detail-item">
+                            <span class="detail-label">From:</span>
+                            <span class="detail-value">Your Kuchupuchu 💗</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">To:</span>
+                            <span class="detail-value">My Beautiful Sonam</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Date:</span>
+                            <span class="detail-value">Your Special Day</span>
+                        </div>
+                    </div>
+                    
+                    <button class="continue-btn fade-in-up delay-7" onclick="navigateToSection(1)">
+                        Read My Full Apology & Birthday Wishes
+                        <span class="arrow">→</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Apology Page -->
+    <section id="section-1" class="section">
+        <div class="floating-hearts-apology">
+            <span class="float-heart">💗</span>
+            <span class="float-heart">💕</span>
+            <span class="float-heart">💖</span>
+        </div>
+        <div class="section-content">
+            <h2 class="section-title text-glow interactive-title">I Need to Apologize</h2>
+            <div class="apology-text">
+                <div class="apology-paragraph-wrapper">
+                    <p class="typing-text" data-text="I fell asleep, Sonam. I know how much that moment meant to you, and I'm truly sorry I wasn't there."></p>
+                    <button class="replay-btn" onclick="replayTyping(this)" title="Replay">↻</button>
+                </div>
+                <div class="apology-paragraph-wrapper">
+                    <p class="typing-text delay-typing" data-text="It wasn't intentional. My medicine made me drowsy, and despite trying to stay awake, I couldn't fight it."></p>
+                    <button class="replay-btn" onclick="replayTyping(this)" title="Replay">↻</button>
+                </div>
+                <div class="apology-paragraph-wrapper">
+                    <p class="typing-text delay-typing-2" data-text="But that's not an excuse. I take full responsibility. I should have been there for you, my love."></p>
+                    <button class="replay-btn" onclick="replayTyping(this)" title="Replay">↻</button>
+                </div>
+            </div>
+            <div class="apology-birthday-section">
+                <div class="birthday-highlight-box">
+                    <h3 class="birthday-box-title">🎂 It's Your Special Day, Sonam! 🎂</h3>
+                    <p class="birthday-box-text">Even though I made a mistake, I want you to know that your birthday means everything to me. Today is about celebrating YOU - your amazing spirit, your beautiful heart, and the incredible person you are.</p>
+                    <p class="birthday-box-text">I'm sorry I wasn't there at that moment, but I'm here now, and I want to make your day special in every way I can.</p>
+                </div>
+            </div>
+            <div class="apology-interactive-elements">
+                <button class="interactive-btn pulse-element" onclick="createHeartBurst(this)">
+                    <span>💗</span> Click for Love
+                </button>
+                <button class="interactive-btn pulse-element" onclick="showApologyMessage()">
+                    <span>💌</span> Read More
+                </button>
+                <button class="interactive-btn pulse-element" onclick="createPartyPopper()">
+                    <span>🎉</span> Celebrate!
+                </button>
+            </div>
+            <div id="apology-extra-message" class="apology-extra-message"></div>
+            <div class="scroll-hint bounce-on-hover">↓</div>
+        </div>
+    </section>
+
+    <!-- Section 3: Feelings Page -->
+    <section id="section-2" class="section">
+        <div class="section-content feelings-content">
+            <h2 class="section-title">How I Feel, Sonam</h2>
+            <p class="feelings-intro">These are the emotions swirling in my heart...</p>
+            <div class="feelings-layout">
+                <div class="feeling-card-large interactive-card" onclick="showCardMessage(this, 'I woke up with immediate regret, Sonam. Knowing I had let you down broke my heart. The first thing I thought was how much I had hurt you.')">
+                    <div class="feeling-card-inner">
+                        <div class="card-icon-large">😔</div>
+                        <h3>Guilt</h3>
+                        <p class="feeling-description">I woke up with immediate regret, knowing I had let you down. The weight of disappointment I caused you is something I carry heavily.</p>
+                        <div class="feeling-quote">"I should have been there"</div>
+                        <div class="card-hover-text">Tap for more 💗</div>
+                    </div>
+                </div>
+                
+                <div class="feeling-cards-grid">
+                    <div class="feeling-card-medium interactive-card" onclick="showCardMessage(this, 'I tried so hard, Sonam. I fought sleep, but my medicine was stronger than my will. Every fiber of my being wanted to stay awake for you.')">
+                        <div class="card-icon-medium">💔</div>
+                        <h3>Sadness</h3>
+                        <p>I tried so hard to stay awake, but my body betrayed me when you needed me most.</p>
+                        <div class="card-hover-text">Tap me 💗</div>
+                    </div>
+                    
+                    <div class="feeling-card-medium interactive-card" onclick="showCardMessage(this, 'You mean everything to me, Sonam. I never want to disappoint you, my love. Your happiness is my happiness.')">
+                        <div class="card-icon-medium">💗</div>
+                        <h3>Care</h3>
+                        <p>You mean everything to me, and I never want to disappoint you. Your feelings matter more than anything.</p>
+                        <div class="card-hover-text">Tap me 💗</div>
+                    </div>
+                </div>
+                
+                <div class="feeling-card-wide interactive-card" onclick="showCardMessage(this, 'Sonam, I want you to know that even though I failed in that moment, my love for you never wavers. I will do everything to make it right.')">
+                    <div class="feeling-card-wide-content">
+                        <div class="card-icon-wide">💝</div>
+                        <div class="wide-content-text">
+                            <h3>My Promise to You</h3>
+                            <p>Even in my failure, my love for you remains unwavering. I will do everything in my power to make things right and never let you down again.</p>
+                        </div>
+                    </div>
+                    <div class="card-hover-text">Tap for message 💗</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Importance Page -->
+    <section id="section-3" class="section">
+        <div class="importance-background-elements">
+            <div class="bg-heart">💗</div>
+            <div class="bg-heart">💕</div>
+            <div class="bg-heart">💖</div>
+        </div>
+        <div class="section-content importance-content">
+            <h2 class="section-title text-glow interactive-title">What You Mean To Me</h2>
+            <p class="importance-subtitle">Click on each card to discover more...</p>
+            <div class="importance-grid">
+                <div class="importance-item interactive-item bounce-on-hover" onclick="showImportanceMessage(this, 'Sonam, I respect you deeply. You deserve respect in every moment, and I failed to show it.'); createClickSparkle(event.clientX, event.clientY);">
+                    <div class="importance-icon rotate-on-hover">✨</div>
+                    <h3>Respect</h3>
+                    <p>I respect you deeply, and I'm sorry I didn't show it in that moment.</p>
+                    <div class="item-hover-text">Tap me 💗</div>
+                    <div class="importance-glow"></div>
+                </div>
+                <div class="importance-item interactive-item bounce-on-hover" onclick="showImportanceMessage(this, 'You bring such peace to my life, Sonam. I want to be the calm in your storm, not the cause of it.'); createClickSparkle(event.clientX, event.clientY);">
+                    <div class="importance-icon rotate-on-hover">🕊️</div>
+                    <h3>Peace</h3>
+                    <p>You bring peace to my life, and I want to bring peace to yours.</p>
+                    <div class="item-hover-text">Tap me 💗</div>
+                    <div class="importance-glow"></div>
+                </div>
+                <div class="importance-item interactive-item bounce-on-hover" onclick="showImportanceMessage(this, 'You are my priority, Sonam. Always have been, always will be. I need to show it better.'); createClickSparkle(event.clientX, event.clientY);">
+                    <div class="importance-icon rotate-on-hover">⭐</div>
+                    <h3>Priority</h3>
+                    <p>You are my priority, always. I'll do better to show it.</p>
+                    <div class="item-hover-text">Tap me 💗</div>
+                    <div class="importance-glow"></div>
+                </div>
+                <div class="importance-item interactive-item bounce-on-hover" onclick="showImportanceMessage(this, 'You are priceless to me, Sonam. More valuable than anything in this world.'); createClickSparkle(event.clientX, event.clientY);">
+                    <div class="importance-icon rotate-on-hover">💎</div>
+                    <h3>Value</h3>
+                    <p>You are invaluable to me. I treasure every moment with you.</p>
+                    <div class="item-hover-text">Tap me 💗</div>
+                    <div class="importance-glow"></div>
+                </div>
+            </div>
+            <div class="importance-footer">
+                <p class="importance-footer-text">Every single one of these matters, Sonam 💗</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Birthday Celebration -->
+    <section id="section-4" class="section birthday-section">
+        <div class="candles">
+            <div class="candle"></div>
+            <div class="candle"></div>
+            <div class="candle"></div>
+            <div class="candle"></div>
+            <div class="candle"></div>
+        </div>
+        <div class="confetti-container"></div>
+        <div class="section-content birthday-content">
+            <h2 class="birthday-title interactive-title">Happy Birthday, Sonam!</h2>
+            <div class="birthday-greeting">
+                <p class="greeting-line interactive-greeting">Baby,</p>
+                <p class="greeting-line interactive-greeting">Jaan,</p>
+                <p class="greeting-line interactive-greeting">Mohatarma,</p>
+            </div>
+            <p class="birthday-message">Today is your special day, Sonam, and I want you to feel celebrated, cherished, and loved beyond measure.</p>
+            <div class="birthday-expanded">
+                <p class="birthday-paragraph">On this beautiful day, I want you to know that you are the most amazing person I know. Your smile lights up my world, your laughter is music to my ears, and your presence makes everything better.</p>
+                <p class="birthday-paragraph">You deserve all the happiness in the universe, Sonam. You deserve to be spoiled, to be loved, to be celebrated not just today, but every single day.</p>
+                <p class="birthday-paragraph">Even though I messed up, I want you to know that you are always on my mind. You are my first thought in the morning and my last thought at night.</p>
+                <p class="birthday-paragraph">May this new year of your life bring you endless joy, incredible adventures, dreams come true, and all the love your beautiful heart can hold.</p>
+            </div>
+            <div class="floating-hearts">
+                <span class="heart interactive-heart-small" onclick="createHeartBurst(this)">💗</span>
+                <span class="heart interactive-heart-small" onclick="createHeartBurst(this)">💕</span>
+                <span class="heart interactive-heart-small" onclick="createHeartBurst(this)">💖</span>
+                <span class="heart interactive-heart-small" onclick="createHeartBurst(this)">💝</span>
+                <span class="heart interactive-heart-small" onclick="createHeartBurst(this)">💗</span>
+            </div>
+            <p class="birthday-signature">With all my love,<br>Your Kuchupuchu 💗</p>
+        </div>
+    </section>
+
+    <!-- Section 6: Wishes Page -->
+    <section id="section-5" class="section">
+        <div class="section-content wishes-content">
+            <h2 class="section-title">My Wishes For You, Sonam</h2>
+            <p class="wishes-intro">I wish for you everything beautiful in this world and beyond...</p>
+            <div class="wishes-grid-layout">
+                <div class="wish-card-large interactive-wish" onclick="expandWish(this)">
+                    <div class="wish-card-header">
+                        <span class="wish-icon-large">😊</span>
+                        <h3 class="wish-title-large">Happiness & Joy</h3>
+                    </div>
+                    <p class="wish-main-text">Endless happiness and joy</p>
+                    <p class="wish-detail">I wish for you to wake up every morning with a smile, to find joy in the little things, and to experience happiness that fills your entire being. May your days be bright and your heart be light.</p>
+                    <div class="wish-expand-hint">Click to read more →</div>
+                </div>
+                
+                <div class="wish-card-medium interactive-wish" onclick="expandWish(this)">
+                    <span class="wish-icon-medium">🕊️</span>
+                    <h3>Peace</h3>
+                    <p class="wish-main-text">Peace in your heart and mind</p>
+                    <p class="wish-detail">I wish for you to find inner peace, to let go of worries, and to feel calm even in the stormiest of times. May your mind be at ease and your soul be tranquil.</p>
+                </div>
+                
+                <div class="wish-card-medium interactive-wish" onclick="expandWish(this)">
+                    <span class="wish-icon-medium">🌟</span>
+                    <h3>Success</h3>
+                    <p class="wish-main-text">Success in all your endeavors</p>
+                    <p class="wish-detail">I wish for you to achieve every goal you set, to excel in everything you do, and to reach heights beyond your imagination. May success follow you wherever you go.</p>
+                </div>
+                
+                <div class="wish-card-medium interactive-wish" onclick="expandWish(this)">
+                    <span class="wish-icon-medium">💐</span>
+                    <h3>Memories</h3>
+                    <p class="wish-main-text">Beautiful moments and memories</p>
+                    <p class="wish-detail">I wish for you to create countless beautiful memories, to experience magical moments, and to have stories worth telling. May every day bring you something wonderful to remember.</p>
+                </div>
+                
+                <div class="wish-card-medium interactive-wish" onclick="expandWish(this)">
+                    <span class="wish-icon-medium">💗</span>
+                    <h3>Love</h3>
+                    <p class="wish-main-text">Love that surrounds you always</p>
+                    <p class="wish-detail">I wish for you to be surrounded by love - from family, friends, and especially from yourself. May you always feel loved, cherished, and valued for the amazing person you are.</p>
+                </div>
+                
+                <div class="wish-card-wide interactive-wish" onclick="expandWish(this)">
+                    <div class="wish-wide-content">
+                        <span class="wish-icon-wide">✨</span>
+                        <div class="wish-wide-text">
+                            <h3>Smiles & Laughter</h3>
+                            <p class="wish-main-text">Smiles that light up your days</p>
+                            <p class="wish-detail">I wish for you to have countless reasons to smile, to find humor in life, and to spread that beautiful smile of yours everywhere you go. Your smile is my favorite thing in the world.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="wish-card-medium interactive-wish" onclick="expandWish(this)">
+                    <span class="wish-icon-medium">🎯</span>
+                    <h3>Strength</h3>
+                    <p class="wish-main-text">Strength to overcome any challenge</p>
+                    <p class="wish-detail">I wish for you to have the strength and courage to face any obstacle, to rise above difficulties, and to emerge stronger every time. You are capable of anything, Sonam.</p>
+                </div>
+                
+                <div class="wish-card-medium interactive-wish" onclick="expandWish(this)">
+                    <span class="wish-icon-medium">🌺</span>
+                    <h3>Health</h3>
+                    <p class="wish-main-text">Health and wellness always</p>
+                    <p class="wish-detail">I wish for you to be healthy, strong, and full of energy. May your body be healthy, your mind be sharp, and your spirit be vibrant. Your wellbeing matters so much to me.</p>
+                </div>
+                
+                <div class="wish-card-medium interactive-wish" onclick="expandWish(this)">
+                    <span class="wish-icon-medium">🎨</span>
+                    <h3>Adventures</h3>
+                    <p class="wish-main-text">Adventures and new experiences</p>
+                    <p class="wish-detail">I wish for you to explore the world, to try new things, to step out of your comfort zone, and to live life to the fullest. May every adventure bring you joy and growth.</p>
+                </div>
+                
+                <div class="wish-card-large interactive-wish" onclick="expandWish(this)">
+                    <div class="wish-card-header">
+                        <span class="wish-icon-large">💫</span>
+                        <h3 class="wish-title-large">Dreams Come True</h3>
+                    </div>
+                    <p class="wish-main-text">Dreams that come true</p>
+                    <p class="wish-detail">I wish for all your dreams to come true, for your aspirations to become reality, and for you to achieve everything you've ever wanted. Dream big, Sonam, because you deserve it all.</p>
+                    <div class="wish-expand-hint">Click to read more →</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Promises Page -->
+    <section id="section-6" class="section">
+        <div class="section-content promises-content">
+            <h2 class="section-title">My Promises To You, Sonam</h2>
+            <p class="promises-intro">These are not just words, but commitments from my heart...</p>
+            <div class="promises-timeline">
+                <div class="promise-timeline-item">
+                    <div class="timeline-marker">
+                        <div class="promise-check-large">✓</div>
+                    </div>
+                    <div class="promise-card-timeline">
+                        <h3 class="promise-title">Mindfulness</h3>
+                        <p class="promise-text">I will be more mindful of important moments. I'll set reminders, prepare in advance, and ensure I'm present when you need me most.</p>
+                    </div>
+                </div>
+                
+                <div class="promise-timeline-item">
+                    <div class="timeline-marker">
+                        <div class="promise-check-large">✓</div>
+                    </div>
+                    <div class="promise-card-timeline">
+                        <h3 class="promise-title">Communication</h3>
+                        <p class="promise-text">I will communicate better about my limitations. I'll be honest about my situation and find solutions together with you.</p>
+                    </div>
+                </div>
+                
+                <div class="promise-timeline-item">
+                    <div class="timeline-marker">
+                        <div class="promise-check-large">✓</div>
+                    </div>
+                    <div class="promise-card-timeline">
+                        <h3 class="promise-title">Priority</h3>
+                        <p class="promise-text">I will always prioritize you and your feelings. Your happiness and wellbeing will always come first in my decisions.</p>
+                    </div>
+                </div>
+                
+                <div class="promise-timeline-item">
+                    <div class="timeline-marker">
+                        <div class="promise-check-large">✓</div>
+                    </div>
+                    <div class="promise-card-timeline">
+                        <h3 class="promise-title">Growth</h3>
+                        <p class="promise-text">I will learn from this and do better. Every mistake is a lesson, and I'm committed to growing into the partner you deserve.</p>
+                    </div>
+                </div>
+                
+                <div class="promise-timeline-item">
+                    <div class="timeline-marker">
+                        <div class="promise-check-large">✓</div>
+                    </div>
+                    <div class="promise-card-timeline">
+                        <h3 class="promise-title">Daily Love</h3>
+                        <p class="promise-text">I will show you every day how much you mean to me. Through actions, words, and gestures, I'll make sure you never doubt my love.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Interactive Choice Page -->
+    <section id="section-7" class="section">
+        <div class="choice-background-animation">
+            <div class="choice-particle">💗</div>
+            <div class="choice-particle">💕</div>
+            <div class="choice-particle">💖</div>
+            <div class="choice-particle">💝</div>
+        </div>
+        <div class="section-content choice-content">
+            <h2 class="section-title text-glow interactive-title">I Hope You Can Forgive Me</h2>
+            <p class="choice-subtitle">How are you feeling, Sonam?</p>
+            <div class="choice-buttons">
+                <button class="choice-btn forgive-btn bounce-on-hover pulse-element" onclick="handleChoice('forgive'); createHeartBurst(this);">
+                    <span class="btn-icon rotate-on-hover">💗</span>
+                    <span class="btn-text">I forgive you</span>
+                    <div class="btn-glow"></div>
+                </button>
+                <button class="choice-btn upset-btn bounce-on-hover pulse-element" onclick="handleChoice('upset'); createClickSparkle(event.clientX, event.clientY);">
+                    <span class="btn-icon rotate-on-hover">😤</span>
+                    <span class="btn-text">I'm still upset</span>
+                    <div class="btn-glow"></div>
+                </button>
+            </div>
+            <div id="choice-response" class="choice-response"></div>
+        </div>
+    </section>
+
+    <!-- Section 9: Surprise Page -->
+    <section id="section-8" class="section surprise-section">
+        <div class="sparkles"></div>
+        <div class="section-content surprise-content">
+            <h2 class="section-title">A Little Surprise</h2>
+            <div class="surprise-box">
+                <div class="surprise-icon">🎁</div>
+                <p class="surprise-text">You found the hidden message!</p>
+                <p class="surprise-message">Thank you for taking the time to read through all of this. It means the world to me that you're here, listening, and giving me a chance to make things right.</p>
+                <p class="surprise-message">You deserve all the love, care, and attention in the world. I'm grateful for you, today and always.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 10: Final Page -->
+    <section id="section-9" class="section final-section">
+        <div class="section-content final-content">
+            <h2 class="final-title">Always Here</h2>
+            <p class="final-message">I'll always be here for you,</p>
+            <p class="final-message">through the good times and the difficult ones.</p>
+            <p class="final-message">I'll always try to do better,</p>
+            <p class="final-message">because you deserve nothing less.</p>
+            <div class="final-heart">💗</div>
+            <p class="final-signature">With all my love,</p>
+            <p class="final-signature">Your Kuchupuchu 💗</p>
+            <p class="final-signature">Puspender</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
